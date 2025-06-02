@@ -7,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Gastos</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js"></script>
 </head>
-
-<body>
+<body>   
     <header class="cabecalho">
         <nave class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre o Projeto </a>
         </nave>
+        <div class="theme-selector">
+            <label for="theme">Tema:</label>
+            <select id="theme" onchange="changeTheme()">
+            <option value="claro">Claro</option>
+            <option value="escuro">Escuro</option>
+            <option value="colorido">Colorido</option>
+            </select>
+        </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -26,8 +34,8 @@
                 simples e eficiente, acompanhando de perto seus ganhos, despesas fixas, variáveis e metas de economia. A
                 planilha é totalmente editável, permitindo que você personalize categorias, períodos, para que ela se
                 encaixe perfeitamente na sua realidade.</p>
-            <p class="apresentacao__conteudo__Conclusao"> O foco está na <strong class="destaque_dois">consciência
-                    financeira</strong> e na tomada de decisão baseada em dados reais, com o
+            <p class="apresentacao__conteudo__Conclusao"> O foco está na consciência
+                    financeira e na tomada de decisão baseada em dados reais, com o
                 intuito de melhorar o planejamento e evitar o endividamento.
                 Utilizar esta planilha com regularidade é um passo
                 importante rumo à educação financeira, à prevenção de

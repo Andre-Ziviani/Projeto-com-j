@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-fundo: #2E073F;
-    --cor-texto: #EBD3F8;
-    --cor-destaque: #7A1CAC;
-    --cor-nave: #AD49E1;
+    --cor-fundo: #FBFFE4;
+    --cor-texto: #3D8D7A;
+    --cor-destaque: #B3D8A8;
+    --cor-nave: #A3D1C6;
 
     --fonte-titulo: "Krona One", sans-serif;
     --fonte-texto: "Montserrat", sans-serif;
@@ -23,18 +23,26 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 10%
+    padding: 2% 0% 0% 10%;
+    font-family:var(--fonte-texto);
+    display: flex;
+    gap: 80px;
+    font-size: 24px;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 8% 10%;
 }
 
 .cabecalho__menu {
     display: flex;
     gap: 80px;
+    
 }
 
 .cabecalho__menu__link {
     font-family: var(--fonte-texto);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     color : var(--cor-nave);
     text-decoration: none;
 }
@@ -59,27 +67,30 @@ body {
     gap:40px
 }
 .apresentacao__conteudo__titulo {
-    font-size: 2.rem;
+    font-size: 1.65rem;
     font-family: var(--fonte-titulo);
     font-weight: 400
     
 }
 .apresentacao__conteudo__intro {
-    font-size: 1.5rem;
+    font-size: 1.rem;
     font-family: var(--fonte-texto);
     text-align: justify;
+    font-weight: 600;
 
 }    
 .apresentacao__conteudo__desenvolvimento {
-    font-size: 1.5rem;
+    font-size: 1.rem;
     font-family: var(--fonte-texto);
     text-align: justify;
+    font-weight: 600;
 }
 .apresentacao__conteudo__Conclusao {
-    font-size: 1.5rem;
+    font-size: 1.rem;
     padding: 15px 0;
     font-family: var(--fonte-texto);
     text-align: justify;
+    font-weight: 600;
 }
 .apresentacao__links {
     display: flex;
@@ -90,8 +101,8 @@ body {
 }
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-titulo);
-    font-size: 1.25rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 24px 0;
 
 }

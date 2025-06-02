@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header class="cabecalho">
         <nave class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre o Projeto</a>
         </nave>
+        <div class="theme-selector">
+            <label for="theme">Tema:</label>
+            <select id="theme" onchange="changeTheme()">
+            <option value="claro">Claro</option>
+            <option value="escuro">Escuro</option>
+            </select>
+        </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+            <h1 class="apresentacao__conteudo__titulo">Sobre o Projeto</h1>
             <p class="apresentacao__conteudo__desenvolvimento">O presente projeto foi desenvolvido pelos alunos da
                 Faculdade Multivix como parte das atividades da <strong class="destaque">Prática de Extensão Interdisciplinar (PEI)</strong>, que tem como
                 objetivo promover a integração entre teoria e prática, fortalecendo a formação acadêmica e contribuindo
