@@ -26,7 +26,7 @@ body {
     padding: 2% 0% 0% 10%;
     font-family:var(--fonte-texto);
     display: flex;
-    gap: 80px;
+    gap: 60px;
     font-size: 24px;
     justify-content: space-between;
     font-weight: 600;
@@ -35,7 +35,7 @@ body {
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    gap: 60px;
     
 }
 
