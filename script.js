@@ -1,3 +1,4 @@
+console.log("JS carregado");
 function changeTheme() {
       const theme = document.getElementById('theme').value;
 
@@ -14,4 +15,29 @@ function changeTheme() {
         document.documentElement.style.setProperty('--cor-destaque', '#7A1CAC');
         document.documentElement.style.setProperty('--cor-nave', '#AD49E1');
       }
-    }
+    };
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("DOM carregado e JS executando");
+
+  const steps = document.querySelectorAll('.step');
+
+  steps.forEach(step => {
+    const header = step.querySelector('.step-header');
+    header.addEventListener('click', () => {
+      const isActive = step.classList.contains('active');
+
+      // Fecha todos
+      steps.forEach(s => {
+        s.classList.remove('active');
+        s.querySelector('.step-header').setAttribute('aria-expanded', 'false');
+      });
+
+      // Se não estava ativo, ativa este
+      if (!isActive) {
+        step.classList.add('active');
+        header.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});

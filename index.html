@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Gastos</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body>   
     <header class="cabecalho">
-        <nave class="cabecalho__menu">
+        <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Projeto </a>
-        </nave>
+        </nav>
         <div class="theme-selector">
             <label for="theme">Tema:</label>
             <select id="theme" onchange="changeTheme()">
@@ -33,13 +33,83 @@
                 simples e eficiente, acompanhando de perto seus ganhos, despesas fixas, variáveis e metas de economia. A
                 planilha é totalmente editável, permitindo que você personalize categorias, períodos, para que ela se
                 encaixe perfeitamente na sua realidade.</p>
-            <p class="apresentacao__conteudo__Conclusao"> O foco está na consciência
+            <p class="apresentacao__conteudo__conclusao"> O foco está na consciência
                     financeira e na tomada de decisão baseada em dados reais, com o
                 intuito de melhorar o planejamento e evitar o endividamento.
                 Utilizar esta planilha com regularidade é um passo
                 importante rumo à educação financeira, à prevenção de
                 crises econômicas pessoais e à criação de uma reserva que
                 permita enfrentar imprevistos com tranquilidade.</p>
+    <section class="container">
+        <h1 class="apresentacao__conteudo__titulo">Planejamento Financeiro</h1>
+        <p class="apresentacao__conteudo__conclusao">Este fluxo é dividido em etapas interdependentes que permitem uma visão sistêmica do processo de controle de gastos. Começamos pela identificação das fontes de renda, passando pelo registro detalhado de despesas fixas e variáveis, até a análise dos resultados e ajustes necessários. Cada etapa é fundamental para construir uma base sólida de educação financeira, promovendo escolhas mais conscientes no uso do dinheiro.
+        </p>
+        <section class="steps-grid" aria-label="Etapas do planejamento financeiro">
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>1. Identificar fontes de renda</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Liste todas as formas de entrada de dinheiro: salário, pensão, freelas, rendimentos, etc.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>2. Listar despesas fixas e variáveis</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Classifique seus gastos como fixos (aluguel, luz) ou variáveis (lazer, roupas).</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>3. Registrar diariamente os gastos</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Use um caderno, app ou planilha para anotar todos os gastos do dia.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>4. Classificar os gastos por categoria</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Separe os gastos em categorias como: moradia, transporte, alimentação, lazer, saúde, etc.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>5. Calcular diferença entre renda e despesas</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Subtraia suas despesas da renda mensal para saber se há sobra ou déficit.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>6. Analisar tendências e ajustar hábitos de consumo</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Observe padrões de gastos e ajuste o que for necessário para melhorar sua saúde financeira.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>7. Estabelecer metas mensais</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Defina objetivos realistas: poupar, pagar dívidas, investir ou reduzir despesas específicas.</div>
+            </article>
+
+            <article class="step">
+                <button class="step-header" aria-expanded="false">
+                <span>8. Revisar mensalmente o orçamento</span>
+                <span class="arrow">▼</span>
+                </button>
+                <div class="step-content">Todo fim de mês, avalie os resultados, ajuste o orçamento e repense suas estratégias.</div>
+            </article>
+            </section>
+            </section>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Clique no link e faça o download:</h2>
                 <a class="apresentacao__links__download"
@@ -48,7 +118,7 @@
                 </a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./asstes/Business-Intelligence.jpg" alt="Business_Intelligence">
+        <img class="apresentacao__imagem" src="./asstes/Business-Intelligence.jpg" alt="Business_Intelligence">        
     </main>
     <footer class="rodape">
         <p>Desenvolvido por:</p>
