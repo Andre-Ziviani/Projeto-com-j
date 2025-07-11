@@ -65,17 +65,18 @@ body {
 
 .apresentacao {
     padding: 8% ;
-    display: flex; 
+    display: flex;
     align-items: center; 
     justify-content: space-between;
     gap: 82px; 
 }
 
 .apresentacao__conteudo {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap:40px
+    gap:40px;
+    max-width: 600px;
 }
 .apresentacao__conteudo__titulo {
     font-size: 1.65rem;
